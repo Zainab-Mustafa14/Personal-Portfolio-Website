@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zainab Mustafa - Frontend / MERN Stack Developer portfolio." />
+  <title>Zainab Mustafa | Frontend / MERN Stack Developer</title>
+
+  <!-- Marks JS as available so scroll-reveal hiding never applies without it -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="navbar">
+    <div class="container navbar__inner">
+
+      <a href="#hero" class="navbar__brand" aria-label="Zainab Mustafa - back to top">
+        Zainab Mustafa<span class="navbar__dot">.</span>
+      </a>
+
+      <nav class="navbar__nav" aria-label="Main navigation">
+        <ul id="nav-menu" class="navbar__menu">
+          <li><a href="#hero" class="navbar__link">Home</a></li>
+          <li><a href="#about" class="navbar__link">About</a></li>
+          <li><a href="#skills" class="navbar__link">Skills</a></li>
+          <li><a href="#projects" class="navbar__link">Projects</a></li>
+          <li><a href="#experience" class="navbar__link">Experience</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+          <li class="navbar__menu-cta"><a href="#contact" class="btn btn--dark">Let's Talk</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#contact" class="btn btn--dark navbar__cta">Let's Talk</a>
+        <button class="navbar__toggle" type="button"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="hero" aria-label="Introduction">
+      <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal" style="--d: 0.05s">Hi, I'm Zainab Mustafa</p>
+
+          <h1 class="hero__title reveal" style="--d: 0.15s">
+            <span class="hero__title-line">Frontend /</span>
+            <span class="hero__title-line hero__title-accent">MERN Stack</span>
+            <span class="hero__title-line">Developer</span>
+          </h1>
+
+          <p class="hero__text reveal" style="--d: 0.3s">
+            I build responsive, user-friendly web interfaces with React and JavaScript,
+            and I'm growing toward full-stack development with the MERN stack.
+            I care about clean code and interfaces that feel simple to use.
+          </p>
+
+          <div class="hero__actions reveal" style="--d: 0.45s">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="#contact" class="btn btn--ghost">Let's Connect</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" style="--d: 0.3s" aria-hidden="true">
+          <div class="scene">
+            <div class="layer layer--back">
+              <span class="layer__bar"></span>
+              <span class="layer__bar layer__bar--short"></span>
+              <div class="layer__row">
+                <span class="layer__block"></span>
+                <span class="layer__block"></span>
+              </div>
+            </div>
+
+            <div class="code-window">
+              <div class="code-window__top">
+                <span class="dot dot--1"></span>
+                <span class="dot dot--2"></span>
+                <span class="dot dot--3"></span>
+                <span class="code-window__file">Portfolio.jsx</span>
+              </div>
+              <pre class="code-window__body"><code><span class="c-key">const</span> <span class="c-fn">Portfolio</span> = () =&gt; {
+  <span class="c-key">const</span> [ready, setReady] =
+    <span class="c-fn">useState</span>(<span class="c-val">true</span>);
+
+  <span class="c-key">return</span> (
+    <span class="c-tag">&lt;Hero</span> <span class="c-attr">ready</span>={ready} <span class="c-tag">/&gt;</span>
+  );
+};</code></pre>
+            </div>
+
+            <div class="badge badge--react"><i></i>React</div>
+            <div class="badge badge--js"><i></i>JavaScript</div>
+            <div class="badge badge--node"><i></i>Node.js</div>
+            <div class="badge badge--mongo"><i></i>MongoDB</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         ABOUT
+         Profile visual (CSS only) + introduction + highlights.
+         ======================================================= -->
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <div class="container about__inner">
+
+        <!-- Left: CSS profile visual (decorative; no photo).
+             A real photo can replace .profile__avatar later. -->
+        <div class="about__visual scroll-reveal" aria-hidden="true">
+          <div class="profile-scene">
+            <div class="profile-back profile-back--one"></div>
+            <div class="profile-back profile-back--two"></div>
+
+            <div class="profile-card">
+              <div class="profile__avatar"><span>ZM</span></div>
+              <p class="profile__name">Zainab Mustafa</p>
+              <p class="profile__role">Frontend / MERN Stack Developer</p>
+              <div class="profile__tags">
+                <span>React.js</span>
+                <span>JavaScript</span>
+                <span>Firebase</span>
+              </div>
+            </div>
+
+            <div class="profile-chip">BS Information Technology</div>
+          </div>
+        </div>
+
+        <!-- Right: text -->
+        <div class="about__content">
+          <p class="section__eyebrow scroll-reveal">Get to know me</p>
+          <h2 id="about-heading" class="section__title scroll-reveal" style="--rd: 0.08s">About Me</h2>
+
+          <p class="about__text scroll-reveal" style="--rd: 0.16s">
+            I'm a BS Information Technology graduate with hands-on experience in frontend
+            development. I work mainly with React.js and JavaScript, and I'm familiar with
+            Firebase for building connected web applications.
+          </p>
+          <p class="about__text scroll-reveal" style="--rd: 0.24s">
+            I'm currently strengthening my MERN stack skills so I can build complete
+            applications from front to back. I enjoy creating responsive, user-friendly
+            interfaces that are clean, clear and easy to use.
+          </p>
+
+          <ul class="about__highlights">
+            <li class="highlight scroll-reveal" style="--rd: 0.32s">
+              <span class="highlight__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+              </span>
+              <h3 class="highlight__title">Education</h3>
+              <p class="highlight__text">BS Information Technology</p>
+            </li>
+            <li class="highlight scroll-reveal" style="--rd: 0.4s">
+              <span class="highlight__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+              </span>
+              <h3 class="highlight__title">Frontend Development</h3>
+              <p class="highlight__text">React.js and JavaScript</p>
+            </li>
+            <li class="highlight scroll-reveal" style="--rd: 0.48s">
+              <span class="highlight__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>
+              </span>
+              <h3 class="highlight__title">MERN Stack</h3>
+              <p class="highlight__text">Currently building skills</p>
+            </li>
+          </ul>
+
+          <a href="#projects" class="btn btn--primary about__cta scroll-reveal" style="--rd: 0.56s">View My Projects</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================
+         SKILLS
+         Grouped skill cards with subtle 3D tilt.
+         ======================================================= -->
+    <section id="skills" class="section skills" aria-labelledby="skills-heading">
+      <div class="container">
+
+        <header class="section__header">
+          <p class="section__eyebrow scroll-reveal">What I use</p>
+          <h2 id="skills-heading" class="section__title scroll-reveal" style="--rd: 0.08s">My Skills</h2>
+          <p class="section__subtitle scroll-reveal" style="--rd: 0.16s">Technologies and tools I work with.</p>
+        </header>
+
+        <div class="skills__groups">
+
+          <article class="skill-group scroll-reveal" style="--rd: 0.1s">
+            <h3 class="skill-group__title">Frontend</h3>
+            <ul class="skill-grid">
+              <li class="skill-card"><span class="skill-card__icon">H5</span><span class="skill-card__name">HTML5</span></li>
+              <li class="skill-card"><span class="skill-card__icon">CSS</span><span class="skill-card__name">CSS3</span></li>
+              <li class="skill-card"><span class="skill-card__icon">JS</span><span class="skill-card__name">JavaScript</span></li>
+              <li class="skill-card"><span class="skill-card__icon">Re</span><span class="skill-card__name">React.js</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-group scroll-reveal" style="--rd: 0.2s">
+            <h3 class="skill-group__title">Backend</h3>
+            <ul class="skill-grid">
+              <li class="skill-card"><span class="skill-card__icon">Nd</span><span class="skill-card__name">Node.js</span></li>
+              <li class="skill-card"><span class="skill-card__icon">Ex</span><span class="skill-card__name">Express.js</span></li>
+              <li class="skill-card"><span class="skill-card__icon">Mg</span><span class="skill-card__name">MongoDB</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-group scroll-reveal" style="--rd: 0.3s">
+            <h3 class="skill-group__title">Other</h3>
+            <ul class="skill-grid">
+              <li class="skill-card"><span class="skill-card__icon">Fb</span><span class="skill-card__name">Firebase</span></li>
+              <li class="skill-card"><span class="skill-card__icon">Git</span><span class="skill-card__name">Git</span></li>
+              <li class="skill-card"><span class="skill-card__icon">GH</span><span class="skill-card__name">GitHub</span></li>
+              <li class="skill-card"><span class="skill-card__icon">Fl</span><span class="skill-card__name">Flutter</span></li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+         PROJECTS
+         1 featured card (LAN Sphere) + 4 varied cards.
+         Visuals are illustrative CSS mockups (not screenshots).
+         ======================================================= -->
+    <section id="projects" class="section projects" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <header class="section__header section__header--wide">
+          <p class="section__eyebrow scroll-reveal">MY WORK</p>
+          <h2 id="projects-heading" class="section__title scroll-reveal" style="--rd: 0.08s">Featured Projects</h2>
+          <p class="section__subtitle scroll-reveal" style="--rd: 0.16s">A selection of projects I've built while developing my skills across frontend, mobile, and full-stack development.</p>
+        </header>
+
+        <ul class="projects__list">
+
+          <!-- PROJECT 1: LAN Sphere (featured) -->
+          <li class="project-item project-item--featured scroll-reveal">
+            <article class="project-card project-card--featured" aria-labelledby="p1-title">
+              <div class="project-card__visual">
+                <span class="project-card__flag">Final Year Project</span>
+                <div class="stage stage--phones" role="img" aria-label="Illustrative UI mockup, not a screenshot, of the LAN Sphere mobile app: a QR onboarding screen behind a local chat screen">
+                  <div class="phone phone--back">
+                    <span class="phone__notch"></span>
+                    <div class="qr-screen">
+                      <span class="u-line" style="--w:50%"></span>
+                      <span class="qr"></span>
+                      <span class="qr-label">Scan to join</span>
+                      <span class="u-pill u-pill--accent" style="--w:70%"></span>
+                    </div>
+                  </div>
+                  <div class="phone phone--front">
+                    <span class="phone__notch"></span>
+                    <div class="phone__head">
+                      <span class="u-avatar"></span>
+                      <div class="phone__who"><span class="u-line" style="--w:70%"></span><span class="u-line" style="--w:40%"></span></div>
+                      <span class="status-dot"></span>
+                    </div>
+                    <div class="phone__tabs"><span class="is-active">Chat</span><span>Calls</span><span>Files</span></div>
+                    <div class="phone__chat">
+                      <span class="msg msg--in"></span>
+                      <span class="msg msg--out"></span>
+                      <span class="msg msg--in msg--file"><i></i><span class="u-line"></span></span>
+                      <span class="msg msg--out msg--short"></span>
+                    </div>
+                    <div class="phone__input"><span></span><i></i></div>
+                  </div>
+                  <span class="chip chip--tl"><i class="status-dot"></i>Local network</span>
+                  <span class="chip chip--br">Voice / Video</span>
+                </div>
+                <span class="project-card__caption">Illustrative UI mockup</span>
+              </div>
+              <div class="project-card__body">
+                <p class="project-card__category">Mobile Application / Final Year Project</p>
+                <h3 id="p1-title" class="project-card__title">LAN Sphere</h3>
+                <p class="project-card__text">LAN Sphere is a Flutter-based mobile application designed for communication over a local network without requiring an internet connection. It focuses on local text communication, voice/video calling, file sharing, and secure user access.</p>
+                <ul class="tech-list" aria-label="Technologies used">
+                  <li>Flutter</li><li>Dart</li><li>WebRTC</li><li>TCP/UDP</li><li>SharedPreferences</li><li>QR-based onboarding</li>
+                </ul>
+              </div>
+            </article>
+          </li>
+
+          <!-- PROJECT 2: Tutor Hub -->
+          <li class="project-item project-item--lg scroll-reveal" style="--rd: 0.05s">
+            <article class="project-card" aria-labelledby="p2-title">
+              <div class="project-card__visual">
+                <div class="stage stage--browser" role="img" aria-label="Illustrative UI mockup, not a screenshot, of a tutoring web-app dashboard">
+                  <div class="stage__back"></div>
+                  <div class="browser">
+                    <div class="browser__bar"><i></i><i></i><i></i><span></span></div>
+                    <div class="browser__body td">
+                      <div class="td__side">
+                        <span class="td__logo"></span>
+                        <span class="td__nav is-active"></span><span class="td__nav"></span><span class="td__nav"></span><span class="td__nav"></span>
+                      </div>
+                      <div class="td__main">
+                        <div class="td__top"><span class="u-pill" style="--w:55%"></span><span class="u-avatar u-avatar--sm"></span></div>
+                        <div class="td__stats">
+                          <span class="u-card"><i class="u-line" style="--w:60%"></i><b class="u-line u-line--accent" style="--w:40%"></b></span>
+                          <span class="u-card"><i class="u-line" style="--w:50%"></i><b class="u-line u-line--accent" style="--w:55%"></b></span>
+                          <span class="u-card"><i class="u-line" style="--w:65%"></i><b class="u-line u-line--accent" style="--w:35%"></b></span>
+                        </div>
+                        <div class="td__list">
+                          <span class="td__row"><i class="u-avatar u-avatar--sm"></i><span class="u-line" style="--w:55%"></span><em class="u-tag"></em></span>
+                          <span class="td__row"><i class="u-avatar u-avatar--sm"></i><span class="u-line" style="--w:45%"></span><em class="u-tag"></em></span>
+                          <span class="td__row"><i class="u-avatar u-avatar--sm"></i><span class="u-line" style="--w:60%"></span><em class="u-tag"></em></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="chip chip--cal"><span class="cal"><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i></span></span>
+                </div>
+                <span class="project-card__caption">Illustrative UI mockup</span>
+              </div>
+              <div class="project-card__body">
+                <p class="project-card__category">Web Application</p>
+                <h3 id="p2-title" class="project-card__title">Tutor Hub</h3>
+                <p class="project-card__text">Tutor Hub is a web application built with React.js and Firebase, focused on connecting users with tutoring-related services through a structured and user-friendly interface.</p>
+                <ul class="tech-list" aria-label="Technologies used"><li>React.js</li><li>Firebase</li><li>JavaScript</li></ul>
+              </div>
+            </article>
+          </li>
+
+          <!-- PROJECT 3: Vistox -->
+          <li class="project-item project-item--sm scroll-reveal" style="--rd: 0.15s">
+            <article class="project-card" aria-labelledby="p3-title">
+              <div class="project-card__visual">
+                <div class="stage stage--browser stage--flip" role="img" aria-label="Illustrative UI mockup, not a screenshot, of a modern landing page">
+                  <div class="stage__back"></div>
+                  <div class="browser">
+                    <div class="browser__bar"><i></i><i></i><i></i><span></span></div>
+                    <div class="browser__body vx">
+                      <div class="vx__nav">
+                        <span class="vx__logo"></span>
+                        <span class="vx__links"><i class="u-line"></i><i class="u-line"></i><i class="u-line"></i></span>
+                        <span class="u-pill u-pill--dark" style="--w:30px"></span>
+                      </div>
+                      <div class="vx__hero">
+                        <div class="vx__copy">
+                          <span class="u-line u-line--strong" style="--w:90%"></span>
+                          <span class="u-line u-line--strong" style="--w:68%"></span>
+                          <span class="u-line" style="--w:85%"></span>
+                          <span class="u-pill u-pill--accent" style="--w:48px"></span>
+                        </div>
+                        <div class="vx__art"><span class="vx__shape vx__shape--1"></span><span class="vx__shape vx__shape--2"></span></div>
+                      </div>
+                      <div class="vx__features">
+                        <span class="u-card"><i class="u-icon"></i><b class="u-line" style="--w:70%"></b></span>
+                        <span class="u-card"><i class="u-icon"></i><b class="u-line" style="--w:55%"></b></span>
+                        <span class="u-card"><i class="u-icon"></i><b class="u-line" style="--w:65%"></b></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="project-card__caption">Illustrative UI mockup</span>
+              </div>
+              <div class="project-card__body">
+                <p class="project-card__category">Frontend Web Project</p>
+                <h3 id="p3-title" class="project-card__title">Vistox</h3>
+                <!-- PLACEHOLDER TEXT: replace with your own description -->
+                <p class="project-card__text">Vistox is a frontend web project built with React.js, JavaScript and CSS, focused on a clean and responsive user interface.</p>
+                <ul class="tech-list" aria-label="Technologies used"><li>React.js</li><li>JavaScript</li><li>CSS</li></ul>
+              </div>
+            </article>
+          </li>
+
+          <!-- PROJECT 4: VitalWell Health -->
+          <li class="project-item project-item--sm scroll-reveal" style="--rd: 0.05s">
+            <article class="project-card" aria-labelledby="p4-title">
+              <div class="project-card__visual">
+                <div class="stage stage--browser" role="img" aria-label="Illustrative UI mockup, not a screenshot, of a health and fitness article website">
+                  <div class="stage__back"></div>
+                  <div class="browser">
+                    <div class="browser__bar"><i></i><i></i><i></i><span></span></div>
+                    <div class="browser__body vw">
+                      <div class="vw__nav">
+                        <span class="vw__logo"></span>
+                        <span class="vx__links"><i class="u-line"></i><i class="u-line"></i><i class="u-line"></i></span>
+                      </div>
+                      <div class="vw__hero">
+                        <span class="vw__img"><i></i></span>
+                        <div class="vw__copy">
+                          <em class="u-tag u-tag--mint"></em>
+                          <span class="u-line u-line--strong" style="--w:95%"></span>
+                          <span class="u-line u-line--strong" style="--w:70%"></span>
+                          <span class="u-line" style="--w:85%"></span>
+                        </div>
+                      </div>
+                      <div class="vw__posts">
+                        <span class="vw__post"><i class="vw__thumb"></i><span class="u-line" style="--w:90%"></span><span class="u-line" style="--w:60%"></span></span>
+                        <span class="vw__post"><i class="vw__thumb vw__thumb--alt"></i><span class="u-line" style="--w:80%"></span><span class="u-line" style="--w:50%"></span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="chip chip--ring"><span class="ring"></span></span>
+                </div>
+                <span class="project-card__caption">Illustrative UI mockup</span>
+              </div>
+              <div class="project-card__body">
+                <p class="project-card__category">Health &amp; Fitness Website</p>
+                <h3 id="p4-title" class="project-card__title">VitalWell Health</h3>
+                <p class="project-card__text">VitalWell Health is a health and fitness content website built with React, with a focus on responsive UI, structured content, and search-engine-friendly implementation. SEO work includes appropriate metadata and structured information where relevant.</p>
+                <ul class="tech-list" aria-label="Technologies used"><li>React.js</li><li>CSS</li><li>JavaScript</li><li>SEO</li></ul>
+              </div>
+            </article>
+          </li>
+
+          <!-- PROJECT 5: Jira Clone -->
+          <li class="project-item project-item--lg scroll-reveal" style="--rd: 0.15s">
+            <article class="project-card" aria-labelledby="p5-title">
+              <div class="project-card__visual">
+                <div class="stage stage--browser stage--flip" role="img" aria-label="Illustrative UI mockup, not a screenshot, of a Kanban-style project board">
+                  <div class="stage__back"></div>
+                  <div class="browser">
+                    <div class="browser__bar"><i></i><i></i><i></i><span></span></div>
+                    <div class="browser__body kb">
+                      <div class="kb__head">
+                        <span class="u-line u-line--strong" style="--w:30%"></span>
+                        <span class="kb__avatars"><i></i><i></i><i></i></span>
+                      </div>
+                      <div class="kb__cols">
+                        <div class="kb__col">
+                          <p class="kb__label"><i class="kb__dot"></i>To Do</p>
+                          <span class="kb__card"><i class="u-line" style="--w:90%"></i><i class="u-line" style="--w:60%"></i><em class="u-tag"></em></span>
+                          <span class="kb__card"><i class="u-line" style="--w:75%"></i><i class="u-line" style="--w:50%"></i><em class="u-tag u-tag--mint"></em></span>
+                        </div>
+                        <div class="kb__col">
+                          <p class="kb__label"><i class="kb__dot kb__dot--accent"></i>In Progress</p>
+                          <span class="kb__card"><i class="u-line" style="--w:85%"></i><i class="u-line" style="--w:55%"></i><em class="u-tag"></em></span>
+                        </div>
+                        <div class="kb__col">
+                          <p class="kb__label"><i class="kb__dot kb__dot--mint"></i>Done</p>
+                          <span class="kb__card"><i class="u-line" style="--w:80%"></i><i class="u-line" style="--w:45%"></i><em class="u-tag u-tag--mint"></em></span>
+                          <span class="kb__card"><i class="u-line" style="--w:70%"></i><i class="u-line" style="--w:60%"></i><em class="u-tag"></em></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="chip chip--drag"><i class="u-line" style="--w:90%"></i><i class="u-line" style="--w:55%"></i><em class="u-tag"></em></span>
+                </div>
+                <span class="project-card__caption">Illustrative UI mockup</span>
+              </div>
+              <div class="project-card__body">
+                <p class="project-card__category">Project Management Web App</p>
+                <h3 id="p5-title" class="project-card__title">Jira Clone</h3>
+                <p class="project-card__text">A project-management interface inspired by modern task tracking tools, built to practice React-based UI development, task organization, and application workflows. This is an independent practice project, not affiliated with or endorsed by Atlassian.</p>
+                <ul class="tech-list" aria-label="Technologies used"><li>React.js</li><li>Firebase</li><li>JavaScript</li></ul>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+
+         <!-- =======================================================
+         EXPERIENCE
+         Alternating vertical timeline (single column on mobile).
+         ======================================================= -->
+    <section id="experience" class="section experience" aria-labelledby="experience-heading">
+      <div class="container">
+
+        <header class="section__header section__header--wide">
+          <p class="section__eyebrow scroll-reveal">MY JOURNEY</p>
+          <h2 id="experience-heading" class="section__title scroll-reveal" style="--rd: 0.08s">Experience</h2>
+          <p class="section__subtitle scroll-reveal" style="--rd: 0.16s">Practical experience gained through internships and hands-on development.</p>
+        </header>
+
+        <ol class="timeline">
+
+          <!-- EXPERIENCE 1: Mercury Sols -->
+          <li class="tl-item scroll-reveal">
+            <span class="tl-marker" aria-hidden="true"></span>
+            <div class="tl-meta">
+              <span class="tl-pill">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                3 Months
+              </span>
+            </div>
+            <article class="tl-card" aria-labelledby="exp1-title">
+              <div class="tl-card__head">
+                <span class="tl-logo" aria-hidden="true">MS</span>
+                <div>
+                  <h3 id="exp1-title" class="tl-card__company">Mercury Sols</h3>
+                  <p class="tl-card__role">MERN Stack Developer Intern</p>
+                </div>
+              </div>
+              <p class="tl-card__text">Worked on web application development while strengthening practical skills across the MERN stack through project-based development.</p>
+              <p class="tl-card__context"><span>Project context:</span>Jira Clone</p>
+              <p class="tl-label" id="exp1-tech">Technologies learned &amp; worked with</p>
+              <ul class="tech-list" aria-labelledby="exp1-tech">
+                <li>React.js</li><li>JavaScript</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- EXPERIENCE 2: Appverse Technologies -->
+          <li class="tl-item tl-item--leads-upcoming scroll-reveal" style="--rd: 0.05s">
+            <span class="tl-marker" aria-hidden="true"></span>
+            <div class="tl-meta">
+              <span class="tl-pill">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                2 Months
+              </span>
+              <span class="tl-pill">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/></svg>
+                Remote
+              </span>
+            </div>
+            <article class="tl-card" aria-labelledby="exp2-title">
+              <div class="tl-card__head">
+                <span class="tl-logo" aria-hidden="true">AT</span>
+                <div>
+                  <h3 id="exp2-title" class="tl-card__company">Appverse Technologies</h3>
+                  <p class="tl-card__role">WordPress Developer Intern</p>
+                </div>
+              </div>
+              <p class="tl-card__text">Worked on WordPress-based frontend development and responsive web interfaces, gaining practical experience in website structure, styling, and frontend implementation.</p>
+              <p class="tl-label" id="exp2-tech">Technologies &amp; skills</p>
+              <ul class="tech-list" aria-labelledby="exp2-tech">
+                <li>WordPress</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- EXPERIENCE 3: Auspify Technologies (upcoming) -->
+          <li class="tl-item tl-item--upcoming scroll-reveal" style="--rd: 0.05s">
+            <span class="tl-marker" aria-hidden="true"></span>
+            <div class="tl-meta">
+              <span class="status-badge status-badge--upcoming"><i></i>Upcoming</span>
+            </div>
+            <article class="tl-card" aria-labelledby="exp3-title">
+              <div class="tl-card__head">
+                <span class="tl-logo" aria-hidden="true">AU</span>
+                <div>
+                  <h3 id="exp3-title" class="tl-card__company">Auspify Technologies</h3>
+                  <p class="tl-card__role">Web Development Intern</p>
+                </div>
+              </div>
+              <p class="tl-card__text">Selected for a Web Development Internship focused on gaining practical experience in web development.</p>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+
+         <!-- =======================================================
+         CONTACT
+         ======================================================= -->
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+      <div class="contact__glow contact__glow--one" aria-hidden="true"></div>
+      <div class="contact__glow contact__glow--two" aria-hidden="true"></div>
+
+      <div class="container">
+
+        <header class="section__header section__header--wide">
+          <p class="section__eyebrow scroll-reveal">GET IN TOUCH</p>
+          <h2 id="contact-heading" class="section__title scroll-reveal" style="--rd: 0.08s">Let's Build Something Together</h2>
+          <p class="section__subtitle scroll-reveal" style="--rd: 0.16s">Have a project, opportunity, or idea? I'd be happy to hear from you.</p>
+        </header>
+
+        <div class="contact__grid">
+
+          <!-- Left: invitation + details -->
+          <div class="contact__info scroll-reveal" style="--rd: 0.1s">
+            <p class="contact__lead">Whether it's an internship, a job opportunity or a project you'd like to discuss, feel free to reach out. You can use the form or connect with me directly.</p>
+
+            <ul class="contact-list">
+              <li class="contact-item">
+                <span class="contact-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                </span>
+                <div>
+                  <p class="contact-item__label">Email</p>
+                  <a class="contact-item__value" href="mailto:zainabmustafa178@gmail.com">zainabmustafa178@gmail.com</a>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <span class="contact-item__icon" aria-hidden="true"><b>in</b></span>
+                <div>
+                  <p class="contact-item__label">LinkedIn</p>
+                  <a class="contact-item__value" href="https://www.linkedin.com/in/zainab-mustafaa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">linkedin.com/in/zainab-mustafaa</a>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <span class="contact-item__icon" aria-hidden="true"><b>GH</b></span>
+                <div>
+                  <p class="contact-item__label">GitHub</p>
+                  <a class="contact-item__value" href="https://github.com/Zainab-Mustafa14" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)">github.com/Zainab-Mustafa14</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: form + success panel -->
+          <div class="contact__form-wrap scroll-reveal" style="--rd: 0.2s">
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <!-- Hidden spam trap (real visitors never see it) -->
+              <input type="checkbox" name="botcheck" id="cf-botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true" />
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="cf-name">Name</label>
+                  <input id="cf-name" name="name" type="text" autocomplete="name" required aria-describedby="cf-name-error" />
+                  <p class="field__error" id="cf-name-error"></p>
+                </div>
+                <div class="field">
+                  <label for="cf-email">Email</label>
+                  <input id="cf-email" name="email" type="email" autocomplete="email" required aria-describedby="cf-email-error" />
+                  <p class="field__error" id="cf-email-error"></p>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="cf-subject">Subject</label>
+                <input id="cf-subject" name="subject" type="text" required aria-describedby="cf-subject-error" />
+                <p class="field__error" id="cf-subject-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" rows="5" required aria-describedby="cf-message-error"></textarea>
+                <p class="field__error" id="cf-message-error"></p>
+              </div>
+
+              <button type="submit" class="btn btn--primary contact-form__submit">Send Message</button>
+
+              <p class="form-error" id="form-error" role="alert" hidden>Something went wrong while sending your message. Please try again.</p>
+            </form>
+
+            <!-- Success confirmation (shown only after the message is really sent) -->
+            <div class="contact-success" id="contact-success" tabindex="-1" aria-labelledby="success-title" hidden>
+              <span class="contact-success__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17.5 19 7.5"/></svg>
+              </span>
+              <h3 class="contact-success__title" id="success-title">Message Sent Successfully</h3>
+              <p class="contact-success__text">Thank you for reaching out. Your message has been received. I'll get back to you soon.</p>
+
+              <dl class="contact-success__summary">
+                <div><dt>Name</dt><dd id="summary-name"></dd></div>
+                <div><dt>Email</dt><dd id="summary-email"></dd></div>
+                <div><dt>Subject</dt><dd id="summary-subject"></dd></div>
+              </dl>
+
+              <button type="button" class="btn btn--ghost" id="send-another">Send Another Message</button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+   <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="#hero" class="navbar__brand" aria-label="Zainab Mustafa - back to top">Zainab Mustafa<span class="navbar__dot">.</span></a>
+          <p class="footer__tagline">Frontend / MERN Stack Developer</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <p class="footer__heading">Navigate</p>
+          <ul class="footer__links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+                <div class="footer__social">
+          <p class="footer__heading">Social</p>
+          <ul class="footer__links">
+            <li>
+              <a class="social-link" href="https://github.com/Zainab-Mustafa14" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)">GitHub</a>
+            </li>
+            <li>
+              <a class="social-link" href="https://www.linkedin.com/in/zainab-mustafaa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Zainab Mustafa. All rights reserved.</p>
+        <a href="#hero" class="back-to-top" id="back-to-top">
+          Back to Top
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
