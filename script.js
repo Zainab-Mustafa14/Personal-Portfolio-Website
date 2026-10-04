@@ -29,27 +29,9 @@ function updateNavbar() {
 window.addEventListener("scroll", updateNavbar, { passive: true });
 updateNavbar();
 
-// /* ---------- Scroll reveal ---------- */
-// const revealItems = document.querySelectorAll(".scroll-reveal");
 
-// if (prefersReducedMotion || !("IntersectionObserver" in window)) {
-//   revealItems.forEach((el) => el.classList.add("is-visible"));
-// } else {
-//   const revealObserver = new IntersectionObserver(
-//     (entries, observer) => {
-//       entries.forEach((entry) => {
-//         if (entry.isIntersecting) {
-//           entry.target.classList.add("is-visible");
-//           observer.unobserve(entry.target); // animate once
-//         }
-//       });
-//     },
-//     { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
-//   );
-//   revealItems.forEach((el) => revealObserver.observe(el));
-// }
 
-/* ---------- Scroll reveal (reusable) ----------
+/* ---------- Scroll reveal ----------
    Add the class "scroll-reveal" to any element to fade/slide it in when
    it enters the viewport (optional delay: style="--rd: 0.1s").
    Put data-reveal-stagger on a parent to stagger its children. */
