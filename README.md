@@ -1,4 +1,4 @@
-# Personal Developer Portfolio
+# Personal Portfolio
 
 A modern and responsive personal developer portfolio built with **HTML, CSS, and Vanilla JavaScript**. The project showcases a clean UI, interactive elements, subtle animations, and responsive layouts across different screen sizes.
 
@@ -71,7 +71,7 @@ portfolio/
 Clone the repository:
 
 ```bash
-git clone https://github.com/zinab-mustafa14/personal-portfolio-website.git
+git clone https://github.com/zainab-mustafa14/personal-portfolio-website.git
 ```
 
 Open the project folder and launch `index.html` in your browser.
